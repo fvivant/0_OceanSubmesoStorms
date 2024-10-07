@@ -3,7 +3,7 @@
 # Program for computing wavenumber-frequency spectra, cospectrum and coherence
 # used in Fig. 3
 # Requirements: 
-## 1) coherence_wf.py
+## 1) spctral_wf.py
 
 import numpy as np
 import spectral_wf as spectral_wf

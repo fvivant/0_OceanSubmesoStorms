@@ -3,7 +3,7 @@
 # Program for computing wavenumber spectra, cospectrum and coherence
 # used in Extended Fig. 1
 # Requirements: 
-## 1) coherence_w.py
+## 1) spectral_w.py
 
 import numpy as np
 import spactral_w as spactral_w
