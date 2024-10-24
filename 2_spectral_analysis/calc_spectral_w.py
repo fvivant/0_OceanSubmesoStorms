@@ -6,7 +6,7 @@
 ## 1) spectral_w.py
 
 import numpy as np
-import spactral_w as spactral_w
+import spectral_w as spectral_w
 from scipy import signal
 from numpy import pi
 import time
@@ -111,10 +111,10 @@ for i in range(int(nt)): # several iterations with these settings
     #i.e. uauxA and uauxB depend on space only (wavenumber spectra)
 
     if i == 0:
-       EuA,EuB,cs,coh,k,l,d1,d2,Atofft,Btofft = spactral_w.spectra_w(uauxA,
+       EuA,EuB,cs,coh,k,l,d1,d2,Atofft,Btofft = spectral_w.spectra_w(uauxA,
                                                              uauxB,dx,dx)
     else:
-       EuaA,EuaB,csa,coha,_,_,_,_,Atoffta,Btofftb = spactral_w.spectra_w(uauxA,
+       EuaA,EuaB,csa,coha,_,_,_,_,Atoffta,Btofftb = spectral_w.spectra_w(uauxA,
                                                              uauxB,dx,dx)
        EuA = EuA + EuaA
        EuB = EuB + EuaB
