@@ -353,7 +353,7 @@ def plott(endname):
         pos1 = axx50.get_position()
         cax = fig.add_axes([pos1.x0, pos1.y1+dcolor, pos1.x1-pos1.x0, dcolor])
         cbar=plt.colorbar(mappable=c2,cax=cax,orientation="horizontal",ticklocation='top',aspect=35)
-        cbar.set_label("Convective Mass Flux at $2$ km [kg.m$^{-2}$.day$^{-1}$]",labelpad=labelpad)
+        cbar.set_label("Convective Mass Flux at $3$ km [kg.m$^{-2}$.day$^{-1}$]",labelpad=labelpad)
         cbar.ax.tick_params(labelsize=tick_font_size)
         
         
@@ -392,7 +392,7 @@ def plott(endname):
         pos1 = axx50.get_position()
         cax = fig.add_axes([pos1.x0, pos1.y1+dcolor, pos1.x1-pos1.x0, dcolor])
         cbar=plt.colorbar(mappable=c2,cax=cax,orientation="horizontal",ticklocation='top',aspect=35)
-        cbar.set_label("Convective diabatic heating at $2$ km [K.day$^{-1}$]",labelpad=labelpad)
+        cbar.set_label("Convective diabatic heating at $3$ km [K.day$^{-1}$]",labelpad=labelpad)
         cbar.ax.tick_params(labelsize=tick_font_size)
         
         lonnn,lattt=np.meshgrid(U10M.lon.data,U10M.lat.data)
